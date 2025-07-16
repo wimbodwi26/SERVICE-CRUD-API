@@ -1,0 +1,6 @@
+service:
+-type: web
+name: go-api-backend
+env: go
+buildCommand: go build -o main .
+startCommand:  ./main
