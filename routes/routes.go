@@ -32,5 +32,11 @@ func SetupRouter() *gin.Engine {
 
 	router.DELETE("/api/user", middlewares.AuthMiddleware(), controllers.DeleteUser)
 
+	router.GET("/", func(c *gin.Context){
+		c.JSON(200, gin.H{
+			"message": "Service CRUD API is running",
+		})
+	})
+
 	return router
 }
