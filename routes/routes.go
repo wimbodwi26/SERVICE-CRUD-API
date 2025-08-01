@@ -12,7 +12,7 @@ func SetupRouter() *gin.Engine {
 	router := gin.Default()
 
 	router.Use(cors.New(cors.Config{
-		AllowOrigins:   []string{"frontend-crud-wine.vercel.app/"},
+		AllowOrigins:   []string{"https://frontend-crud-wine.vercel.app/"},
 		AllowMethods: 	[]string{"GET", "POST", "PUT", "DELETE", "OPTIONS"},
 		AllowHeaders: 	[]string{"Origin", "Content-Type", "Authorization"},
 		ExposeHeaders: 	[]string{"Content-Length"},
